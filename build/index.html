@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=2.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title> Light-side project</title>
+    <script src="/script/svg4everybody.min.js" defer></script>
+    <script src="/script/jquery-3.2.0.min.js" defer></script>
+    <script src="/script/slick.min.js" defer></script>
+    <script src="/script/main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar__header">
+            <div class="logo"><img class="logo__item" src="media/images/logo.svg" alt="Modus versus"></div>
+            <button class="navbar__toggle">
+              <svg class="navbar__button-item" width="16" height="16">
+                <use xlink:href="/media/images/icons.svg#icon-bars"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="navbar__collapse" id="navbar-collapse">
+            <ul class="nav">
+              <li class="nav__item active-pages"><a class="nav__link" href="index.html">Home</a></li>
+              <li class="nav__item"><a class="nav__link" href="about-us.html">About</a></li>
+              <li class="nav__item"><a class="nav__link" href="services.html">Services</a></li>
+              <li class="nav__item nav__item-portfolio portfolio-elem-active" id="portfolio">
+                <svg class="nav__icon-portfolio" width="16" height="16">
+                  <use xlink:href="media/images/icons.svg#icon-angle-down"></use>
+                </svg><a class="nav__link" href="portfolio.html">Portfolio
+                  <ul class="portfolio-list">
+                    <li class="portfolio-list__item">
+                      <svg class="portfolio-list__button-item" width="16" height="16">
+                        <use xlink:href="media/images/icons.svg#icon-angle-right"></use>
+                      </svg><a class="portfolio-list__link" href="portfolio-page-1.html">Portfolio 1 column page</a>
+                    </li>
+                    <li class="portfolio-list__item">
+                      <svg class="portfolio-list__button-item" width="16" height="16">
+                        <use xlink:href="media/images/icons.svg#icon-angle-right"></use>
+                      </svg><a class="portfolio-list__link" href="portfolio-page-1.html">Portfolio 2 column page</a>
+                    </li>
+                    <li class="portfolio-list__item">
+                      <svg class="portfolio-list__button-item" width="16" height="16">
+                        <use xlink:href="media/images/icons.svg#icon-angle-right"></use>
+                      </svg><a class="portfolio-list__link" href="portfolio-page-1.html">Portfolio 3 column page</a>
+                    </li>
+                  </ul></a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="blog.html">Blog</a></li>
+              <li class="nav__item"><a class="nav__link" href="features.html">Features</a></li>
+              <li class="nav__item"><a class="nav__link" href="contacts.html">Contacts</a></li>
+            </ul>
+            <form class="nav__form-search" onsubmit="return false">
+              <button class="nav__button">
+                <svg class="nav__button-item" width="16" height="16">
+                  <use xlink:href="/media/images/icons.svg#icon-search"></use>
+                </svg>
+              </button>
+              <input class="nav__input" type="search" placeholder="Search" onfocusout="hideSiteSearch()">
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="slider">
+        <button class="slider__btn-left">
+          <svg class="slider__btn-left-icon" width="40" height="40">
+            <use xlink:href="media/images/icons.svg#icon-angle-double-left"></use>
+          </svg>
+        </button>
+        <button class="slider__btn-right">
+          <svg class="slider__btn-right-icon" width="40" height="40">
+            <use xlink:href="media/images/icons.svg#icon-angle-double-right"></use>
+          </svg>
+        </button>
+        <div class="slider__info">
+          <h1 class="slider__heading">Vestibulum </h1>
+          <p class="slider__text">Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.</p>
+        </div>
+        <div class="slider-conteiner">
+          <div class="slider-conteiner_item"><img class="main-slider_img" src="media/image-p/img_1.jpg" alt="computer"></div>
+          <div class="slider-conteiner_item"><img class="main-slider_img" src="media/image-p/img_2.jpg" alt="computer and coffe"></div>
+          <div class="slider-conteiner_item"><img class="main-slider_img" src="media/image-p/img_3.jpg" alt="button"></div>
+        </div>
+      </div>
+      <div class="services__block">
+        <div class="services">
+          <h2 class="services__heading">Some of our top services</h2>
+          <p class="services__text">Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.</p>
+        </div><a class="button button__passive button-services" href="#">View more</a>
+      </div>
+      <div class="preview-block">
+        <div class="preview">
+          <div class="preview-item" id="icon-thumbs-o-up-container">
+            <svg class="preview-item__icon" width="60" height="60" id="icon-thumbs-o-up">
+              <use xlink:href="media/images/icons.svg#icon-thumbs-o-up"></use>
+            </svg>
+            <h3 class="preview-item__heading">suspendisse</h3>
+            <p class="preview-item__text">Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc.</p>
+          </div><a class="button button__passive button-preview" href="#" onmouseover="setActiveColor('#icon-thumbs-o-up')" onmouseout="unsetActiveColor('#icon-thumbs-o-up')">read more</a>
+        </div>
+        <div class="preview">
+          <div class="preview-item" id="icon-key-container">
+            <svg class="preview-item__icon" width="60" height="60" id="icon-key">
+              <use xlink:href="media/images/icons.svg#icon-key"></use>
+            </svg>
+            <h3 class="preview-item__heading">maecenas</h3>
+            <p class="preview-item__text">Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.</p>
+          </div><a class="button button__passive button-preview" href="#" onmouseover="setActiveColor('#icon-key')" onmouseout="unsetActiveColor('#icon-key')">read more</a>
+        </div>
+        <div class="preview">
+          <div class="preview-item" id="icon-flag-container">
+            <svg class="preview-item__icon" width="60" height="60" id="icon-flag">
+              <use xlink:href="media/images/icons.svg#icon-flag"></use>
+            </svg>
+            <h3 class="preview-item__heading">aliquam</h3>
+            <p class="preview-item__text">Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non.</p>
+          </div><a class="button button__passive button-preview" href="#" onmouseover="setActiveColor('#icon-flag')" onmouseout="unsetActiveColor('#icon-flag')">read more</a>
+        </div>
+        <div class="preview">
+          <div class="preview-item" id="icon-flask-container">
+            <svg class="preview-item__icon" width="60" height="60" id="icon-flask">
+              <use xlink:href="media/images/icons.svg#icon-flask"></use>
+            </svg>
+            <h3 class="preview-item__heading">habitasse</h3>
+            <p class="preview-item__text">Astehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non.</p>
+          </div><a class="button button__passive button-preview" href="#" onmouseover="setActiveColor('#icon-flask')" onmouseout="unsetActiveColor('#icon-flask')">read more</a>
+        </div>
+      </div>
+      <div class="central-slider">
+        <div class="central-slider__header">
+          <h3 class="central-slider__heading">Why modus versus?</h3>
+          <p class="central-slider__text">Capacitance cascading integer reflective interface data development high bus cache dithering transponder.</p>
+        </div>
+        <div class="central-slider__container">
+          <div class="central-slider__item">
+                  <div class="central-slider__icon-decorative">
+                    <svg class="central-slider__icon-left" width="40" height="40">
+                      <use xlink:href="/media/images/icons.svg#icon-ellipsis-h"></use>
+                    </svg>
+                    <svg class="central-slider__icon-right" width="20" height="20">
+                      <use xlink:href="/media/images/icons.svg#icon-window-minimize"></use>
+                    </svg>
+                  </div>
+            <div class="container__img"><img class="central-slider__img" src="media/image-p/img_1.jpg" alt=""></div>
+          </div>
+          <div class="central-slider__item">
+                  <div class="central-slider__icon-decorative">
+                    <svg class="central-slider__icon-left" width="40" height="40">
+                      <use xlink:href="/media/images/icons.svg#icon-ellipsis-h"></use>
+                    </svg>
+                    <svg class="central-slider__icon-right" width="20" height="20">
+                      <use xlink:href="/media/images/icons.svg#icon-window-minimize"></use>
+                    </svg>
+                  </div>
+            <div class="container__img"><img class="central-slider__img" src="media/image-p/img_2.jpg" alt=""></div>
+          </div>
+          <div class="central-slider__item">
+                  <div class="central-slider__icon-decorative">
+                    <svg class="central-slider__icon-left" width="40" height="40">
+                      <use xlink:href="/media/images/icons.svg#icon-ellipsis-h"></use>
+                    </svg>
+                    <svg class="central-slider__icon-right" width="20" height="20">
+                      <use xlink:href="/media/images/icons.svg#icon-window-minimize"></use>
+                    </svg>
+                  </div>
+            <div class="container__img"><img class="central-slider__img" src="media/image-p/img_4.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="info__container">
+        <div class="list">
+          <h4 class="list__headering">Why choose us ?</h4>
+          <ul class="list__container">
+            <li class="list__item">
+              <svg class="list__icon" width="12" height="12">
+                <use xlink:href="media/images/icons.svg#icon-arrow-right"></use>
+              </svg>Quisque at massa ipsum
+            </li>
+            <li class="list__item">
+              <svg class="list__icon" width="12" height="12">
+                <use xlink:href="media/images/icons.svg#icon-arrow-right"></use>
+              </svg>Maecenas lorem augue, egestas
+            </li>
+            <li class="list__item">
+              <svg class="list__icon" width="12" height="12">
+                <use xlink:href="media/images/icons.svg#icon-arrow-right"></use>
+              </svg>Cras vitae felist at lacus eleifend
+            </li>
+            <li class="list__item">
+              <svg class="list__icon" width="12" height="12">
+                <use xlink:href="media/images/icons.svg#icon-arrow-right"></use>
+              </svg>Etiam auctor diam pellentesque
+            </li>
+            <li class="list__item">
+              <svg class="list__icon" width="12" height="12">
+                <use xlink:href="media/images/icons.svg#icon-arrow-right"></use>
+              </svg>Nulla as massa at dolor
+            </li>
+            <li class="list__item">
+              <svg class="list__icon" width="12" height="12">
+                <use xlink:href="media/images/icons.svg#icon-arrow-right"></use>
+              </svg>condimentum eleifend vitae vitae
+            </li>
+          </ul>
+        </div>
+        <div class="info__comment spacer">
+                <h4 class="comment__headering">What client’s say ?                   </h4>
+                <blockquote class="comment__quote">
+                  <p class="comment__text">Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus vehicula mattis. Nulla ac massa at dolor condimentum.              </p>
+                  <footer class="comment__author-name">Jhon Doe</footer>
+                </blockquote>
+        </div>
+        <div class="info__central-block">   
+          <div class="info__text">Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus <a class="info__text-link" href="#">vehicula mattis</a>. Nulla ac massa at dolor condimentum eleifend vitae vitae urna.</div>
+          <div class="info__diagram">
+            <div class="diagram__container">
+              <div class="diagram__color">
+                <div class="diagram__center"><span class="diagram__number">50</span></div>
+                <p class="diagram__footer">suspendisse
+                </p>
+              </div>
+            </div>
+            <div class="diagram__container">
+              <div class="diagram__color">
+                <div class="diagram__center"><span class="diagram__number">70</span></div>
+                <p class="diagram__footer">maecenas
+                </p>
+              </div>
+            </div>
+            <div class="diagram__container">
+              <div class="diagram__color">
+                <div class="diagram__center"><span class="diagram__number">80</span></div>
+                <p class="diagram__footer">aliquam
+                </p>
+              </div>
+            </div>
+            <div class="diagram__container">
+              <div class="diagram__color">
+                <div class="diagram__center"><span class="diagram__number">100</span></div>
+                <p class="diagram__footer">habitasse
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info__comment visible">
+                <h4 class="comment__headering">What client’s say ?                   </h4>
+                <blockquote class="comment__quote">
+                  <p class="comment__text">Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus vehicula mattis. Nulla ac massa at dolor condimentum.              </p>
+                  <footer class="comment__author-name">Jhon Doe</footer>
+                </blockquote>
+        </div>
+      </div>
+      <div class="mini-slider">
+        <div class="mini-slider__header">
+          <h3 class="mini-slider__header-heading">Our happy clients</h3>
+          <div class="mini-slider__header-line"></div>
+          <button class="mini-slider__header-btn-left">
+            <svg class="mini-slider__header-btn-left-icon" width="20" height="20">
+              <use xlink:href="media/images/icons.svg#icon-chevron-left"></use>
+            </svg>
+          </button>
+          <button class="mini-slider__header-btn-right">
+            <svg class="mini-slider__header-btn-right-icon" width="20" height="20">
+              <use xlink:href="media/images/icons.svg#icon-chevron-right"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mini-slider-conteiner">
+          <div class="mini-slider-conteiner__item"><img class="mini-slider-conteiner__img" src="media/image-p/mops_1.png" alt="Client name"></div>
+          <div class="mini-slider-conteiner__item"><img class="mini-slider-conteiner__img" src="media/image-p/jQuery.png" alt="Client name"></div>
+          <div class="mini-slider-conteiner__item"><img class="mini-slider-conteiner__img" src="media/image-p/img_2.jpg" alt="Client name"></div>
+          <div class="mini-slider-conteiner__item"><img class="mini-slider-conteiner__img" src="media/image-p/mops_1.png" alt="Client name"></div>
+          <div class="mini-slider-conteiner__item"><img class="mini-slider-conteiner__img" src="media/image-p/mops_1.png" alt="Client name"></div>
+          <div class="mini-slider-conteiner__item"><img class="mini-slider-conteiner__img" src="media/image-p/mops_1.png" alt="Client name"></div>
+          <div class="mini-slider-conteiner__item"><img class="mini-slider-conteiner__img" src="media/image-p/mops_2.png" alt="Client name"></div>
+          <div class="mini-slider-conteiner__item"><img class="mini-slider-conteiner__img" src="media/image-p/mops_3.png" alt="Client name"></div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__contact">
+            <div class="footer__logo"><img class="footer__logo-item" src="media/images/logo.svg" alt="Modus versus"></div>
+            <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec.</p>
+            <div class="footer__phone"><span class="footer__phone_name">Phone:</span><span class="footer__phone-item">182 2569 5896</span></div>
+            <div class="footer__mail"><span class="footer__mail-name">e-mail:</span><span class="footer__mail-item">info@modu.versus</span></div>
+          </div>
+          <div class="footer__company">
+            <h5 class="company__headering">Company</h5>
+            <ul class="company__container">
+              <li class="company__item">
+                <svg class="company__icon" width="16" height="16">
+                  <use xlink:href="media/images/icons.svg#icon-angle-right"></use>
+                </svg><a class="company__link" href="#">About</a>
+              </li>
+              <li class="company__item">
+                <svg class="company__icon" width="16" height="16">
+                  <use xlink:href="media/images/icons.svg#icon-angle-right"></use>
+                </svg><a class="company__link" href="#">FAQ</a>
+              </li>
+              <li class="company__item">
+                <svg class="company__icon" width="16" height="16">
+                  <use xlink:href="media/images/icons.svg#icon-angle-right"></use>
+                </svg><a class="company__link" href="#">Contact</a>
+              </li>
+              <li class="company__item">
+                <svg class="company__icon" width="16" height="16">
+                  <use xlink:href="media/images/icons.svg#icon-angle-right"></use>
+                </svg><a class="company__link" href="#">Terms</a>
+              </li>
+              <li class="company__item">
+                <svg class="company__icon" width="16" height="16">
+                  <use xlink:href="media/images/icons.svg#icon-angle-right"></use>
+                </svg><a class="company__link" href="#">Privacy</a>
+              </li>
+              <li class="company__item">
+                <svg class="company__icon" width="16" height="16">
+                  <use xlink:href="media/images/icons.svg#icon-angle-right"></use>
+                </svg><a class="company__link" href="#">Testimonials</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__community">
+            <h5 class="community__headering">Community</h5>
+            <ul class="community__container">      
+              <li class="community__item">
+                <svg class="community__icon" width="16" height="16">
+                  <use xlink:href="media/images/icons.svg#icon-angle-right"></use>
+                </svg><a class="community__link" href="#">Blog</a>
+              </li>
+              <li class="community__item">
+                <svg class="community__icon" width="16" height="16">
+                  <use xlink:href="media/images/icons.svg#icon-angle-right"></use>
+                </svg><a class="community__link" href="#">Forum</a>
+              </li>
+              <li class="community__item">
+                <svg class="community__icon" width="16" height="16">
+                  <use xlink:href="media/images/icons.svg#icon-angle-right"></use>
+                </svg><a class="community__link" href="#">Support</a>
+              </li>
+              <li class="community__item">
+                <svg class="community__icon" width="16" height="16">
+                  <use xlink:href="media/images/icons.svg#icon-angle-right"></use>
+                </svg><a class="community__link" href="#">Newsletter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__blog">
+            <h5 class="blog__headering"><span class="blog-italic">from the </span><span class="blog-bold">blog</span></h5>
+            <div class="blog__conreiner">
+              <div class="blog__row">
+                      <div class="blog__item"><img class="blog__img" src="media/image-p/foto_1.png" alt=""></div>
+                      <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        <time class="blog__time" datetime="2013-05-26">
+                          <block>26 May, 2013</block>
+                        </time>
+                      </p>
+              </div>
+              <div class="blog__row">
+                      <div class="blog__item"><img class="blog__img" src="media/image-p/foto_2.png" alt=""></div>
+                      <p class="blog__text">Nonummy nibh euismod tincidunt ut laoreet dolore   
+                        <time class="blog__time" datetime="2014-01-11">
+                          <block>11 January, 2014</block>
+                        </time>
+                      </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__license">
+          <div class="license__container">
+            <p class="license__block">2013 ModusVersus</p>
+            <div class="social__block"><a class="social__link" href="#">
+                <svg class="social__icon" width="25" height="25">
+                  <use xlink:href="media/images/icons.svg#icon-facebook"></use>
+                </svg></a><a class="social__link" href="#">
+                <svg class="social__icon" width="25" height="25">
+                  <use xlink:href="media/images/icons.svg#icon-google-plus"></use>
+                </svg></a><a class="social__link" href="#">
+                <svg class="social__icon" width="25" height="25">
+                  <use xlink:href="media/images/icons.svg#icon-tumblr"></use>
+                </svg></a><a class="social__link" href="#">
+                <svg class="social__icon" width="25" height="25">
+                  <use xlink:href="media/images/icons.svg#icon-feed"></use>
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
