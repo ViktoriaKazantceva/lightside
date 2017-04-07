@@ -1,5 +1,6 @@
 ;
-svg4everybody();// вызов полифила для корректного отображения svg в IE
+svg4everybody();
+// вызов полифила для корректного отображения svg в IE
 
 //функция смены цвета иконки при навереднии на кнопку в блоке preview_block
 function setActiveColor(id) {
@@ -44,8 +45,8 @@ function hideSiteSearch() {
     $(".nav__input").css('display', 'none');
 };
 
-//блок main_slider_block - подключение слайдера из библиотеки slick
 
+//блок main_slider_block - подключение слайдера из библиотеки slick
 $(document).ready(function(){
   $(".slider-conteiner").slick({
       infinite: true,
@@ -55,11 +56,12 @@ $(document).ready(function(){
       prevArrow:".slider__btn-left",
       nextArrow: ".slider__btn-right",
       slidesToShow: 1,//количество картинок, выводимых в видимой зоне
-      slidesToScroll: 1,//сколько нужно поменять картинок при переключении.
+      slidesToScroll: 1,//сколько нужно поменять картинок при переключении
       initialSlide: 1//определяет картинку, с которой начнется показ слайд-шоу
   });
 
 });
+
 //блок mini_slider_block - подключение слайдера из библиотеки slick
 //Responsive Display
 $(document).ready(function(){
@@ -103,15 +105,3 @@ $('.mini-slider-conteiner').slick({
 ]
 });
 });
-
-//блок central_slider_block - подключение слайдера из библиотеки slick
-//$(document).ready(function(){
-//$('.central-slider__conteiner').slick({
-//  arrows: false,
-//  centerMode: true,
-//  //-centerPadding: '1px',
-//  slidesToShow: 3,
-//  slidesToScroll: 1
-//
-//});
-//});
